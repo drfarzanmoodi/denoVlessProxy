@@ -3,7 +3,7 @@ import { parse, stringify, validate } from 'https://jspm.dev/uuid';
 import { chunk, join } from 'https://jspm.dev/lodash-es';
 import { serveClient } from './deno/client.ts';
 
-const userID = Deno.env.get('UUID') || '';
+const userID = Deno.env.get('UUID') || 'b57c8dd9-7bdb-43fd-cd86-c36e9e1fe1fd';
 let isVaildUser = validate(userID);
 if (!isVaildUser) {
   console.log('not set valid UUID');
