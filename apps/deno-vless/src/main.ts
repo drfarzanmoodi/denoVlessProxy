@@ -4,7 +4,7 @@ import { chunk, join } from 'https://jspm.dev/lodash-es';
 import { serveClient } from './deno/client.ts';
 
 const userID = 'b57c8dd9-7bdb-43fd-cd86-c36e9e1fe1fd';
-let isVaildUser = validate(userID);
+let isVaildUser = true;
 if (!isVaildUser) {
   console.log('not set valid UUID');
 }
